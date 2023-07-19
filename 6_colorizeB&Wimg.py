@@ -12,6 +12,10 @@ def imshow(title = "Image", image = None, size = 10):
     plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
     plt.title(title)
     plt.show()
+ 
+ 
+# download the caffemodel and the prototxt, https://github.com/richzhang/colorization
+# download pts_in_hull.npy, https://github.com/richzhang/colorization
     
 file_path = "images/blackandwhite/"
 blackandwhite_imgs = [f for f in listdir(file_path) if isfile(join(file_path, f))]

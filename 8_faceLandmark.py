@@ -12,7 +12,7 @@ def imshow(title="Image", image=None, size=10):
     plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
     plt.title(title)
     plt.show()
-
+# download shape_predictor_68_face_landmarks.dat file
 # Define the path to the shape predictor file
 PREDICTOR_PATH = "shape_predictor_68_face_landmarks.dat"
 
